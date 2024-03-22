@@ -8,7 +8,7 @@ const ViewTodo = ({ todo }) => {
     const fetchTask = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/todos/${todo.todo_id}`
+          `https://todo-app-postgres-backend.onrender.com/todos/${todo.todo_id}`
         );
         if (response.ok) {
           const taskData = await response.json();
