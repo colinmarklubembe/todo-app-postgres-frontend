@@ -14,7 +14,6 @@ const ListTodo = () => {
   // const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // console.log(doneStatus);
 
   const deleteTodo = async (id) => {
     try {
@@ -67,8 +66,6 @@ const ListTodo = () => {
       const jsonData = await response.json();
 
       setTodos(jsonData);
-      // console.log("Test");
-      // console.log(setTodos);
       setLoading(false);
     } catch (err) {
       console.error(err.message);
